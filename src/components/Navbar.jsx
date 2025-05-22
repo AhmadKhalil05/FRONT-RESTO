@@ -101,7 +101,10 @@ const Navbar = () => {
           <a className="nav-link" href="#">
             Events
           </a>
-          <button className="btn btn-signup ms-3">Sign up</button>
+       <Link to="/users" className="btn btn-signup ms-3">
+          Sign up
+        </Link>
+
         </div>
       </nav>
 
