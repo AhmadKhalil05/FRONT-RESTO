@@ -26,10 +26,8 @@ const StarRating = ({ rating }) => {
 };
 
 const RestaurantCard = ({ restaurant }) => (
-  <Link
-    to={`/restaurant`}
-    style={{ textDecoration: "none" }}
-  >
+  <Link to={`/restaurant/${restaurant.city.toLowerCase()}/${restaurant.id}`} style={{ textDecoration: "none" }}>
+    
     <div
       className="shadow-sm bg-white mb-5"
       style={{ width: "280px", cursor: "pointer", fontFamily: "'Gendy', cursive", color: "#38190f" }}
